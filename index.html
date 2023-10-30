@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- PERSOINAL CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- NAVTOP START -->
+    <section style="width:100vw">
+      <ul class="nav justify-content-center text-white" style="background-color:rgb(226, 149, 6);">
+        <li class="nav-item">
+          <a class="nav-link text-white disabled" style="font-weight: 500" href="#">Top Quality Musical Instrument Store</a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link text-white" style="font-weight: 500" onclick="copyText()">
+            <i class="fa-brands fa-whatsapp me-3 navbutton" aria-hidden="true"><span style="font-family: 'Times New Roman', Times, serif;"> + 6281 928 3198</span></i>
+          </a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link text-white" style="font-weight: 500" href="https://www.instagram.com/yazidanehakim/">
+            <i class="fa-brands fa-instagram navbutton"><span style="font-family: 'Times New Roman', Times, serif;"> yazidanehakim</span></i>
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link navbutton text-white" style="font-weight: 500" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbutton text-white" style="font-weight: 500" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbutton text-white" style="font-weight: 500" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbutton text-white" style="font-weight: 500" href="#">Disabled</a>
+        </li>
+      </ul>
+    </section>
+    <!-- NAVTOP END -->
+
+    <!-- NAV START -->
+    <nav class="navbar navbar-expand-lg m-auto" style="width:100vw;z-index: 10 !important; position: sticky; background-image: linear-gradient(to right, #b90580, #00b3b6);box-shadow:0 0 1px 1px rgb(183, 183, 183)">
+      <div class="container-fluid py-2">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex">
+          <!-- LOGO -->
+          <li class="nav-item mx-4 m-auto">
+            <a class="navbar-brand m-auto" href="#">
+              <img class="logo" src="img/testlogo.png" alt="logo" />
+            </a>
+          </li>
+
+          <!-- SEARCH BAR -->
+          <li class="nav-item m-auto">
+            <form class="d-flex" role="search">
+              <input class="form-control" style="border-radius: 0 0 0 0; width: 30em; font-size: 14px" type="search" placeholder="Type to search..." aria-label="Search" />
+              <button class="me-2 btn" style="background-color:rgb(226, 149, 6);border-radius: 0 10px 10px 0" type="submit">
+                <i class="fa-solid fa-magnifying-glass" style="color: white;" aria-hidden="true"></i>
+              </button>
+            </form>
+          </li>
+
+          <!-- DROPDOWN -->
+          <li class="nav-item dropdown m-auto sticky">
+            <a class="nav-link dropdown-toggle text-white text-start" style="width:11.5em;font-weight: 500" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="instrumentList">Instrument List </a>
+            <ul class="dropdown-menu scrollable-menu">
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Guitar<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Drum<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Bass<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Be<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Flute<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">a<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Actionasdasdasd<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">a<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">Action<p></li>
+              <li><p class="dropdown-item" style="cursor: pointer;" href="">a<p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAV END -->
+
+    <div class="container-fluid" style="filter:blur(0);position:relative;width:100vw;height:fit-content;">
+
+      <!-- SLIDESHOW START -->
+      <div class="mainbg absolute"></div>
+      <div class="row">
+        <div class="mt-5 m-auto col-sm-7 text-white">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="border-radius:2em;box-shadow:
+          0 0 0 2px #ababab,
+          0 0 0 7px #0d0d0d,
+          inset 0 0 4px 5px black;" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="border-radius:2em">
+              <div class="carousel-item active">
+                <img src="img/guitar.jpg" class="d-block w-100" alt="img/guitar.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Guitar</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/piano.jpg" class="d-block w-100" alt="img/guitar.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Piano</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/violin.jpg" class="d-block w-100" alt="img/guitar.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Violin</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDESHOW END -->
+
+      <!-- ALL CATEGORIES START -->
+      <div class="row">
+        <div class="m-auto col-sm-8 text-white my-5 categories" style="box-shadow:0 0 5px .5px rgb(181, 181, 181);border-radius:3em;z-index:10;background-image: linear-gradient(#151515,#2c2c2c);">
+          <h3 class="text-center my-4">All Categories</h3>
+
+          <div class="d-flex justify-content-center flex-wrap">
+
+            <a href="#" class="card box1" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box2" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/bassicon.png" alt="Bass Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Bass</p>
+              </div>
+            </a>
+            <a href="#" class="card box3" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/pianoicon.png" alt="Piano Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Piano</p>
+              </div>
+            </a>
+            <a href="#" class="card box4" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/violinicon.png" alt="Violin Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Violin</p>
+              </div>
+            </a>
+            <a href="#" class="card box5" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box6" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box4" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/violinicon.png" alt="Violin Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Violin</p>
+              </div>
+            </a>
+            <a href="#" class="card box5" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box6" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box4" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/violinicon.png" alt="Violin Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Violin</p>
+              </div>
+            </a>
+            <a href="#" class="card box5" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+            <a href="#" class="card box6 mb-5" style="width: 9em;height:9em">
+              <div class="card-img-top m-auto d-flex" style="width:70%">
+                <img class="m-auto my-2" src="img/guitaricon.png" alt="Guitar Icon" style="width: 4.4em;"> 
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center fs-6">Guitar</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ALL CATEGORIES END -->
+    </div>
+
+    <div class="container-fluid mt-5 m-auto" style="filter:blur(0);position:relative;width:100vw;height:fit-content;">
+      <!-- PRODUCTS START -->
+      <div class="row">
+        <div class="col-sm-10 m-auto">
+          <h4>asdjfasd</h4>
+          <div class="overflow-x-auto m-auto scrollbar" style="width:100%;height:100%;display: grid;grid-auto-flow: column;">
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img/piano.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCTS END -->
+    </div>
+
+
+    <!-- PERSONAL SCRIPT -->
+    <script src="js/script.js"></script>
+
+    <!-- FONT AWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/fce3afd82f.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
