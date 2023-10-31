@@ -17,7 +17,7 @@ li:has(.logo) {
 }
 
 form .form-control:focus {
-  border-color: orange;
+  border-color: rgb(253, 166, 3);
   box-shadow: none;
 }
 
